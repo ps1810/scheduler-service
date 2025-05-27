@@ -1,0 +1,24 @@
+env: "dev" # dev, staging, production
+app:
+  name: "Scheduler"
+
+httpServer:
+  port: 5001
+
+log:
+  level: "debug"
+
+sqlite:
+  name: db.sqlite
+  path: ../data
+  maxConnections: 20
+  maxIdleConnections: 10
+
+scheduler:
+  timezone: "Europe/Amsterdam"
+
+postResult:
+  url: "http://api"
+  port: 5000
+  path: "result"
+  method: "POST"
